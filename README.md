@@ -14,6 +14,12 @@ EasyMDE is a Markdown editor with some nice features, allowing users who may be 
 
 Create a new textarea field, and in the "Inputfield Type" dropdown choose "EasyMDE". Save the field and if you like you can then configure the EasyMDE options for the field as described below.
 
+To convert Markdown to HTML you can install the core TextformatterMarkdownExtra module and apply the textformatter to the field. Alternatively you can use `$sanitizer->entitiesMarkdown()` on the field value, e.g.
+
+```php
+echo $sanitizer->entitiesMarkdown($page->your_field_name, ['fullMarkdown' => true]);
+```
+
 ## Configuration
 
 On the "Input" tab of the field settings you can define EasyMDE options for the field in JSON format. Refer to the [EasyMDE documentation](https://github.com/Ionaru/easy-markdown-editor#configuration) for the available options. Keys in the JSON must be surrounded with double quotes.
