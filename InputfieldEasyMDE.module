@@ -9,7 +9,7 @@ class InputfieldEasyMDE extends InputfieldTextarea {
 		return array(
 			'title' => 'EasyMDE',
 			'summary' => 'EasyMDE (Easy Markdown Editor) as an inputfield for ProcessWire.',
-			'version' => '0.1.0',
+			'version' => '0.1.1',
 			'icon' => 'pencil',
 			'requires' => 'ProcessWire>=3.0.0, PHP>=5.4.0',
 		);

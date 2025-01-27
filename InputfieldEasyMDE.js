@@ -16,6 +16,11 @@
 			easymde_options.element = this;
 			// Init EasyMDE
 			var easymde = new EasyMDE(easymde_options);
+			// Trigger change event on textarea when EasyMDE value changes
+			// to ensure that the inputfield gets the "InputfieldStateChanged" class when it should
+			easymde.codemirror.on('change', () => {
+				$(this).trigger('change');
+			});
 			// Store EasyMDE object on textarea element in case somebody needs it
 			$(this).data('easymde', easymde);
 		});
