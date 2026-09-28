@@ -1,3 +1,7 @@
+# Notice
+
+This module has been retired. Use [InputfieldSimpleMDE](https://github.com/outflux3/InputfieldSimpleMDE) instead.
+
 # Inputfield EasyMDE
 
 EasyMDE (Easy Markdown Editor) as an inputfield for ProcessWire.
